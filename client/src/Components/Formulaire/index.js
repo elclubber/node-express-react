@@ -21,7 +21,7 @@ class Formulaire extends Component {
   }
 
   getDataFromDb = () => {
-    fetch('http://localhost:3000/api/getData')
+    fetch('https://elclubber-node-express-react.herokuapp.com/api/getData')
       .then((data) => data.json())
       .then((res) => this.setState({ data: res.data }));
   };
@@ -36,7 +36,7 @@ class Formulaire extends Component {
     }
     console.log(this.state.data);
 
-    axios.post('http://localhost:3000/api/putData', {
+    axios.post('https://elclubber-node-express-react.herokuapp.com/api/putData', {
       id: idToBeAdded,
       message: message,
     }).then((res) => this.getDataFromDb());
@@ -52,7 +52,7 @@ class Formulaire extends Component {
         objIdToDelete = dat._id;
       }
     });
-    axios.delete('http://localhost:3000/api/deleteData', {
+    axios.delete('https://elclubber-node-express-react.herokuapp.com/api/deleteData', {
       data: {
         id: objIdToDelete,
       },
@@ -70,7 +70,7 @@ class Formulaire extends Component {
       }
     });
 
-    axios.post('http://localhost:3000/api/updateData', {
+    axios.post('https://elclubber-node-express-react.herokuapp.com/api/updateData', {
       id: objIdToUpdate,
       update: { message: updateToApply },
     }).then((res) => this.getDataFromDb());
