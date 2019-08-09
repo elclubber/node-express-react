@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default props => (
-  <home className="home">
+  <div className="home">
  ici cest le home
-  </home>
+  </div>
 );

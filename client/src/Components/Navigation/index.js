@@ -4,8 +4,7 @@ import Home from '../Home';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 export default props => (
-  <mainNav className="mainNav">
-    <main className="main">
+  <div className="mainNav">
       <BrowserRouter>
         <Switch>
           <Route
@@ -20,6 +19,5 @@ export default props => (
       </BrowserRouter>
       <div>
       </div>
-    </main>
-  </mainNav>
+  </div>
 );

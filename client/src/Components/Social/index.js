@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default props => (
-  <social className="social">
+  <div className="social">
  ici cest le social
-  </social>
+  </div>
 );

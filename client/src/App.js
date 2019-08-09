@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navitation from './Components/Navigation';
+import Navigation from './Components/Navigation';
 import Formulaire from './Components/Formulaire';
 
 class App extends Component {
@@ -17,8 +17,8 @@ class App extends Component {
   }
   render() {
     return (
-    <main class="main">
-    <Navitation />
+    <main className="main">
+    <Navigation />
     <Formulaire />
     </main>
     );
