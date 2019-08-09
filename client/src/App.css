@@ -19,8 +19,33 @@
   color: white;
 }
 
+.Diapo {
+  height:200px;
+}
+
+.coverflow__container__1P-xE {
+  background:none !important;
+}
+
+.coverflow__cover__25-7e {
+  box-shadow:none !important;
+  border-radius: 2% !important;
+}
+
+.coverflow__figure__3bk_C {
+  box-shadow:none !important;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.home_1_canvas {
+  width:100%;
+  height:400px;
+  display:block;
+  color:#fff;
+  background:#333;
 }
 
 @keyframes App-logo-spin {

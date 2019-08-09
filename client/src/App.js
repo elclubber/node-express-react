@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './Components/Navigation';
-import Formulaire from './Components/Formulaire';
+import Header from './Components/Header';
 
 class App extends Component {
   constructor(props) {
@@ -18,8 +19,8 @@ class App extends Component {
   render() {
     return (
     <main className="main">
+    <Header />
     <Navigation />
-    <Formulaire />
     </main>
     );
   }
